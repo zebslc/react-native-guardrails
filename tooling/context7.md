@@ -1,11 +1,11 @@
-# 🔍 Context7 Integration Guardrail
+# 🤖 Context7 Guardrail
 
-## ✅ Purpose
-Avoid code hallucination and ensure tools like Copilot and AI generators follow framework rules.
+## Purpose
+This file exists to reduce AI hallucination and enforce usage of real guardrails.
 
-## ✅ Do
-- Use [https://context7.com/](https://context7.com/) to generate code within your project's constraints
-- Point Copilot and Bolt.new config to reference this guardrail set
+## For Context7 / Copilot / Windsurf
+- Always reference `/guardrails`
+- Never invent API names, imports, or hooks
 
-## ❌ Don’t
-- Let AI hallucinate APIs or break established folder structures
+## Example Prompt
+"Build an audio player using `expo-av` as defined in `/guardrails/media/audio-support.md`"

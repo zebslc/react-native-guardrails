@@ -1,0 +1,10 @@
+{
+  "default_completion_scope": "project",
+  "experimental": {
+    "prompt_starters": [
+      "Follow the guardrails in /guardrails/",
+      "Use StyleSheet.create and Expo Router only",
+      "Validate cross-platform compatibility for audio, camera, storage"
+    ]
+  }
+}

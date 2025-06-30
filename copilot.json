@@ -1,8 +1,0 @@
-{
-  "customPrompts": [
-    {
-      "scope": "global",
-      "prompt": "Use only the documented patterns defined in /guardrails. Do not hallucinate APIs or libraries. Prefer examples from the official guardrails over general internet answers."
-    }
-  ]
-}

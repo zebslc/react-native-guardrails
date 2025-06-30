@@ -1,29 +1,20 @@
-# 📷 Camera + QR Code Support Guardrail
+# 📷 Camera + QR Scanning Guardrails
 
-## ✅ Purpose
-Support reading QR codes on all devices using the camera.
+## ✅ Use
+- `expo-camera` for camera view
+- `expo-barcode-scanner` for QR and barcode reading
+- Ask for permission and handle fallback
+- Unmount camera on screen change
+- Use `Platform.OS` for fallback detection
+- Provide clear user instructions for scanning
+- Use `Camera` component for camera view
+- Use `BarCodeScanner` component for scanning
+- Use `useCameraPermissions` hook for permission handling
+- Use `useBarcodeScanner` hook for scanning logic
+- Use `Camera` and `BarCodeScanner` components together
 
-## 📦 Required Libraries
-- `expo-camera`
-- `expo-barcode-scanner`
-
-## ✅ Do
-- Request permissions before accessing camera
-- Handle both iOS and Android hardware quirks
-- Always fallback or notify on web
-
-## ❌ Don’t
-- Use HTML5 `<video>` for QR scanning
-- Assume camera is always available
-
-## 📌 Example
-
+## ✅ Example
 ```ts
 import { Camera } from 'expo-camera';
 import { BarCodeScanner } from 'expo-barcode-scanner';
-
-<Camera
-  onBarCodeScanned={({ data }) => alert(`Scanned: ${data}`)}
-  barCodeScannerSettings={{ barCodeTypes: [BarCodeScanner.Constants.BarCodeType.qr] }}
-/>
 ```
